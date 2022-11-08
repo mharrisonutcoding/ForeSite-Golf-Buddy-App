@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Username, Product, ProductTag } = require('../../models');
+const Golfer = require('../../models/Golfer');
 
 // The `/api/usernames` endpoint
 
