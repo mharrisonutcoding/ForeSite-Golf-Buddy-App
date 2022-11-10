@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS golfers_db;
+DROP DATABASE IF EXISTS golfer_db;
 
-CREATE DATABASE golfers_db;
+CREATE DATABASE golfer_db;
