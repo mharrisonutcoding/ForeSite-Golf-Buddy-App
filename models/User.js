@@ -45,11 +45,13 @@ User.init(
     drinking: {
       type: DataTypes.BOOLEAN
     },
-    high_skill: {
-      type: DataTypes.BOOLEAN
-    },
-    low_skill: {
-      type: DataTypes.BOOLEAN
+    handicap: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        // need to change input type from len to something that limits 0-36
+        len: [36],
+      },
     },
     password: {
       type: DataTypes.STRING,
