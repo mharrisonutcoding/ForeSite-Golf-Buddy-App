@@ -10,8 +10,7 @@ const userData =
         "competitive_game": true,
         "relaxed_game": false,
         "drinking": true,
-        "high_skill": true,
-        "low_skill": false,
+        "handicap": 8,
         "password": "password123"
       },
       {
@@ -22,8 +21,7 @@ const userData =
         "competitive_game": false,
         "relaxed_game": true,
         "drinking": true,
-        "high_skill": false,
-        "low_skill": true,
+        "handicap": 36,
         "password": "password321"
       }
 ];
