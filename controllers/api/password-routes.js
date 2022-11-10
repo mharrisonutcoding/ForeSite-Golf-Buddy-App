@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
-const User = require('../../models/Golfer');
+const User = require('../../models/User');
 
 // Added comments describing the functionality of this `login` route
 router.post('/login', async (req, res) => {
