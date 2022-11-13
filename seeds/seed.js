@@ -4,6 +4,19 @@ const {User, Attribute} = require('../models');
 const userSeedData = require('./user-seeds.json');
 const attributeSeedData = require('./attributes-seeds.json');
 
+const seedDatabase = async() => {
+    await sequelize.sync({
+        force: true
+    });
+
+const users = await User.bulkCreate(userSeedData);
+
+
+    process.exit(0);
+}
+
+seedDatabase();
+
 // const seedUsers = require('./user-seeds');
 // const seedAttr = require('./attributes-seeds');
 
