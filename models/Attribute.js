@@ -18,11 +18,11 @@ Attribute.init({
   },
   gender: {
     // male is true, female is false
-    type: DataTypes.BOOLEAN,
+    type: DataTypes.STRING,
   },
   handicap: {
     type: DataTypes.INTEGER,
-    allowNull: false,
+    allowNull: true,
     validate: {
       min: 0,
       max: 36,

@@ -2,15 +2,13 @@
     {
         "competitive_game": false,
         "relaxed_game": true,
-        "male": true,
-        "female": false,
+        "gender": "male", 
         "handicap": 8
       },
       {
         "competitive_game": false,
         "relaxed_game": true,
-        "male": true,
-        "female": false,
+        "gender": "male",
         "handicap": 36
       }    
 ]
