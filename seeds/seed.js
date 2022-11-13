@@ -9,7 +9,10 @@ const seedDatabase = async() => {
         force: true
     });
 
-const users = await User.bulkCreate(userSeedData);
+const users = await User.bulkCreate(userSeedData, {
+    individualHooks: true,
+    returning: true
+});
 
 
     process.exit(0);
