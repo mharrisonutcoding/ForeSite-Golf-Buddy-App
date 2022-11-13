@@ -1,0 +1,17 @@
+
+[
+    {
+        "user_name": "MichaelH",
+        "first_name": "Michael",
+        "last_name": "Harrison",
+        "email": "mharrison@gmail.com",
+        "password": "password123"
+      },
+      {
+        "user_name": "IsaacF",
+        "first_name": "Isaac",
+        "last_name": "Falcon",
+        "email": "isuckatgolf@gmail.com",
+        "password": "password321"
+      }     
+]
