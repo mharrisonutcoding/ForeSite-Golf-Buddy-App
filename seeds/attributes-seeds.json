@@ -22,5 +22,35 @@
         "relaxed_game": true,
         "gender": "male",
         "handicap": 30
+      },
+      {
+        "competitive_game": false,
+        "relaxed_game": true,
+        "gender": "female",
+        "handicap": 13
+      },
+      {
+        "competitive_game": false,
+        "relaxed_game": true,
+        "gender": "female",
+        "handicap": 5
+      },
+      {
+        "competitive_game": false,
+        "relaxed_game": true,
+        "gender": "female",
+        "handicap": 10
+      },
+      {
+        "competitive_game": false,
+        "relaxed_game": true,
+        "gender": "male",
+        "handicap": 0
+      },
+      {
+        "competitive_game": false,
+        "relaxed_game": true,
+        "gender": "male",
+        "handicap": 4
       }      
 ]
