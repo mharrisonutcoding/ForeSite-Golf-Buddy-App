@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Golfer = require('../../models/User');
+const User = require('../../models/User');
 
 // The `/api/usernames` endpoint
 
