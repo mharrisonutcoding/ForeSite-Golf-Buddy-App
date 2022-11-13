@@ -10,5 +10,17 @@
         "relaxed_game": true,
         "gender": "male",
         "handicap": 36
-      }    
+      },
+      {
+        "competitive_game": true,
+        "relaxed_game": false,
+        "gender": "male",
+        "handicap": 24
+      },
+      {
+        "competitive_game": true,
+        "relaxed_game": true,
+        "gender": "male",
+        "handicap": 30
+      }      
 ]
