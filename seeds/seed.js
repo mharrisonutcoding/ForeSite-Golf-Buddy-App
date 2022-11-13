@@ -29,29 +29,3 @@ const seedDatabase = async () => {
 };
 
 seedDatabase();
-
-// user_id:
-// const seedUsers = require('./user-seeds');
-// const seedAttr = require('./attributes-seeds');
-
-// const seedAll = async() => {
-//     await sequelize.sync({force: true})
-
-//     await seedUsers()
-//     await seedAttr()
-// }
-// seedAll();
-
-// const {User} = require('../models')
-
-// const userData =
-
-// const seedUsers = () => User.bulkCreate(userData);
-// module.exports = seedUsers;
-
-// const {User} = require('../models')
-
-// const userData =
-
-// const seedUsers = () => User.bulkCreate(userData);
-// module.exports = seedUsers;
