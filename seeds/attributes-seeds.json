@@ -1,0 +1,16 @@
+[
+    {
+        "competitive_game": false,
+        "relaxed_game": true,
+        "male": true,
+        "female": false,
+        "handicap": 8
+      },
+      {
+        "competitive_game": false,
+        "relaxed_game": true,
+        "male": true,
+        "female": false,
+        "handicap": 36
+      }    
+]
