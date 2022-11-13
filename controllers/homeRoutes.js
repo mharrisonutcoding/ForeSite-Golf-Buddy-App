@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User} = require('../models')
+const {User, Attribute} = require('../models')
 
 router.get('/', async (req, res) => {
     try {
@@ -28,6 +28,14 @@ router.get('/playercards', async (req, res) => {
 router.get('/profile', async (req, res) => {
     try {
         res.render('profile');
+
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
+router.get('/signup', async (req, res) => {
+    try {
+        res.render('signup');
 
     } catch (err) {
         res.status(500).json(err)
