@@ -13,5 +13,19 @@
         "last_name": "Falcon",
         "email": "isuckatgolf@gmail.com",
         "password": "password321"
+      },
+      {
+        "user_name": "Heisenberg",
+        "first_name": "Walter",
+        "last_name": "White",
+        "email": "babyblue@gmail.com",
+        "password": "password321"
+      },
+      {
+        "user_name": "GodofPar",
+        "first_name": "John",
+        "last_name": "Kratos",
+        "email": "bebetter@gmail.com",
+        "password": "password321"
       }     
 ]
