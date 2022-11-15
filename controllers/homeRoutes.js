@@ -19,7 +19,12 @@ router.get('/login', async (req, res) => {
 })
 router.get('/playercards', async (req, res) => {
     try {
-        res.render('playercards');
+        const userData = await User.findAll({
+            include: [Attribute]
+        })
+        const users = userData.map(user => user.get({plain: true}))
+        console.log(users);
+        res.render('playercards', {users});
 
     } catch (err) {
         res.status(500).json(err)
