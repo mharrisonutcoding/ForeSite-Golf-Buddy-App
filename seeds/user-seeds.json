@@ -13,5 +13,54 @@
         "last_name": "Falcon",
         "email": "isuckatgolf@gmail.com",
         "password": "password321"
-      }     
+      },
+      {
+        "user_name": "Heisenberg",
+        "first_name": "Walter",
+        "last_name": "White",
+        "email": "babyblue@gmail.com",
+        "password": "password321"
+      },
+      {
+        "user_name": "GodofPar",
+        "first_name": "John",
+        "last_name": "Kratos",
+        "email": "bebetter@gmail.com",
+        "password": "password321"
+      },
+      {
+        "user_name": "AirWrecka",
+        "first_name": "Erica",
+        "last_name": "Longbomber",
+        "email": "idropbombs@gmail.com",
+        "password": "password321"
+      },     
+      {
+        "user_name": "RSolo",
+        "first_name": "Rachel",
+        "last_name": "Solov",
+        "email": "ilovecoding@gmail.com",
+        "password": "password321"
+      },     
+      {
+        "user_name": "UcantPutt",
+        "first_name": "Danielle",
+        "last_name": "Woods",
+        "email": "dwoods@gmail.com",
+        "password": "password321"
+      },     
+      {
+        "user_name": "Drock",
+        "first_name": "Darryl",
+        "last_name": "Gray",
+        "email": "douevenlift@gmail.com",
+        "password": "password321"
+      },     
+      {
+        "user_name": "VinceMoney",
+        "first_name": "Vincent",
+        "last_name": "Stevens",
+        "email": "isuckatgolf2@gmail.com",
+        "password": "password321"
+      }          
 ]

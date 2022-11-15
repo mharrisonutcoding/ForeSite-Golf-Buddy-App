@@ -18,7 +18,7 @@ const seedDatabase = async () => {
 
   for (const user of users) {
     let { id } = user.dataValues;  
-    let newAttribute = await Attribute.create({
+    await Attribute.create({
         ...attributeSeedData[index],
         user_id: id
     })
