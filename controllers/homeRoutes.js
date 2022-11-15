@@ -46,6 +46,14 @@ router.get('/signup', async (req, res) => {
         res.status(500).json(err)
     }
 })
+router.get('/chat', async (req, res) => {
+    try {
+        res.render('chat');
+
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
 
 
 module.exports = router;
