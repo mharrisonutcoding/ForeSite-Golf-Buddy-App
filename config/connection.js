@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+const { io } = require("socket.io-client");
 require('dotenv').config();
 
 
