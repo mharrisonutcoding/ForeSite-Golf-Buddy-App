@@ -1,10 +1,11 @@
 const router = require('express').Router();
 const passwordRoutes = require('./password-routes');
 const userRoutes = require('./user-routes');
-const usernameRoutes = require('./username-routes');
+const attributeRoutes = require('./attributes-routes');
 
 router.use('/passwords', passwordRoutes);
 router.use('/users', userRoutes);
-router.use('/usernames', usernameRoutes);
+router.use('/attributes', attributeRoutes);
+
 
 module.exports = router;
