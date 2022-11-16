@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const User = require('../../models/User');
+const {User,Attribute} = require('../../models/User');
 
 // GET all users
 router.get('/', async (req, res) => {
@@ -14,10 +14,16 @@ router.get('/', async (req, res) => {
 // CREATE a new user
 router.post('/', async (req, res) => {
   try {
-    const userData = await User.create({
-      username: req.body.username,
-      email: req.body.email,
+    const newUserData = await {User, Attribute}.create({
+      first_name: req.body.firstname,
+      last_name: req.body.username,
+      email: req.body.username,
+      user_name: req.body.username,
       password: req.body.password,
+      gender: req.body.gender,
+      handicap: req.body.handicap,
+      competitive_game: req.body.handicap,
+      relaxed_game: req.body.handicap,
     });
     res.status(200).json(userData);
   } catch (err) {
