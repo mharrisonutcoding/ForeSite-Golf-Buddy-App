@@ -22,7 +22,7 @@ The teams' motivation was to create a webpage application that allows users to s
 This is to allows users of the webpage to match with compatable golfers based on their own preferences. 
 
 ## Elevator Pitch
-With the growing popularity of Golf, finding a compatable golfing group becomes increasingly important. That’s where Golf Buddies comes in to play. Simply pull up Golfbuddies.com on your favorite browser, create a profile, and get started matching with other similar golfers! As a bonus, you can even get the weather forecast and even chat with potential golf buddies. Golf Buddy is helping you change the way you golf!
+With the growing popularity of Golf, finding a compatable golfing group becomes increasingly important. That’s where Golf Buddies comes in to play. Simply pull up Golfbuddies.com on your favorite browser, create a profile, and get started matching with other similar golfers! As a bonus, you can even get the weather forecast. Golf Buddy is helping you change the way you golf!
 
 ## Demo
 
