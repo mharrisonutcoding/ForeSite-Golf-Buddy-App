@@ -1,20 +1,23 @@
 const router = require('express').Router();
 const {User,Attribute} = require('../../models/User');
+const withAuth = require('../../utils/auth');
 
 // GET all users
-router.get('/', async (req, res) => {
-  try {
-    const userData = await User.findAll();
-    res.status(200).json(userData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
+router.get('/', withAuth, (req, res) => {
+  User.findAll({
+    attributes: { exclude: ['password'] }
+  })
+    .then(dbUserData => res.json(dbUserData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 // CREATE a new user
 router.post('/', async (req, res) => {
   try {
-    const newUserData = await {User, Attribute}.create({
+    const newUserData = await User.create({
       first_name: req.body.firstname,
       last_name: req.body.username,
       email: req.body.username,
@@ -25,7 +28,7 @@ router.post('/', async (req, res) => {
       competitive_game: req.body.handicap,
       relaxed_game: req.body.handicap,
     });
-    res.status(200).json(userData);
+    res.status(200).json(newUserData);
   } catch (err) {
     res.status(400).json(err);
   }
