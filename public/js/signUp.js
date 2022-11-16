@@ -8,10 +8,10 @@ const signupFormHandler = async (event) => {
   const compStyle = document.querySelector("#comp").value.trim();
   const laxStyle = document.querySelector("#lax").value.trim();
   const handicap = document.querySelector("#handicap").value.trim();
-  const gender = document.querySelector("#handicap").value.trim();
+  const gender = document.querySelector("#gender").value.trim();
   const userName = document.querySelector("#username").value.trim();
 
-  if (firstName && lastName && email && password && gender && userName && compStyle && laxStyle && handicap) {
+  if (firstName && lastName && email && password) {
     const response = await fetch("/api/users", {
       method: "POST",
       body: JSON.stringify({
