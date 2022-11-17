@@ -13,36 +13,26 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-router.get('/', async (req, res) => {
-  try {
-    const userData = await Attribute.findAll({
-    });
-    res.status(200).json(userData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
 
 // CREATE a new user
 router.post('/', async (req, res) => {
-  try {
+ 
     const newUserData = await User.create({
-      include: [Attribute]
-      // first_name: req.body.firstName,
-      // last_name: req.body.lastName,
-      // email: req.body.email,
-      // user_name: req.body.userName,
-      // password: req.body.password,
-      // gender: req.body.gender,
-      // handicap: req.body.handicap,
-      // competitive_game: req.body.compStyle,
-      // relaxed_game: req.body.laxStyle,
+      first_name: req.body.firstName,
+      last_name: req.body.lastName,
+      email: req.body.email,
+      user_name: req.body.userName,
+      password: req.body.password
     })
-    const newUser = newUserData.map(user => user.get({plain: true}))
-    console.log(newUser);
-  } catch (err) {
-    res.status(400).json(err);
-  }
+
+    const newAttr = await Attribute.create({
+      competitive_game: req.body.compStyle,
+      relaxed_game:req.body.laxStyle,
+      gender:req.body.gender,
+      handicap:req.body.handicap,
+      user_id: newUserData.dataValues.id,
+    })
+    res.status(200).json({newUserData, newAttr})
 });
 
 // GET one user
@@ -62,7 +52,7 @@ router.get('/:id', async (req, res) => {
 // UPDATE a user
 router.put('/:id', async (req, res) => {
   try {
-    const userData = await User.update(req.body, {
+    const userData = await User.create(req.body, {
       where: {
         id: req.params.id,
       },

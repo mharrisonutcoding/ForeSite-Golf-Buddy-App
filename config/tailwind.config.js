@@ -1,5 +1,11 @@
 module.exports = {
     theme: {
+      extend: {
+        colors: {
+          'green-light': '#22c55e',
+        },
+    },
+
       screens: {
         sm: '480px',
         md: '768px',
