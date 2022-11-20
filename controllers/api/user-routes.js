@@ -16,14 +16,14 @@ router.get('/', async (req, res) => {
 
 // CREATE a new user
 router.post('/', async (req, res) => {
- 
-    const newUserData = await User.create({
-      first_name: req.body.firstName,
-      last_name: req.body.lastName,
-      email: req.body.email,
-      user_name: req.body.userName,
-      password: req.body.password
-    })
+ try{
+  const newUserData = await User.create({
+    first_name: req.body.firstName,
+    last_name: req.body.lastName,
+    email: req.body.email,
+    user_name: req.body.userName,
+    password: req.body.password
+  })
 
     const newAttr = await Attribute.create({
       competitive_game: req.body.compStyle,
@@ -33,6 +33,9 @@ router.post('/', async (req, res) => {
       user_id: newUserData.dataValues.id,
     })
     res.status(200).json({newUserData, newAttr})
+ } catch {
+
+ }
 });
 
 // GET one user
