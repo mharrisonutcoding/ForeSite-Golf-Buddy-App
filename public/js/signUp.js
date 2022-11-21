@@ -11,7 +11,7 @@ const signupFormHandler = async (event) => {
   const gender = document.querySelector("#gender").value.trim();
   const userName = document.querySelector("#username").value.trim();
 
-  if (firstName && lastName && email && password) {
+  if (gender && userName && firstName && lastName && email && password && compStyle && laxStyle && handicap) {
     const response = await fetch("/api/users", {
       method: "POST",
       body: JSON.stringify({
@@ -29,7 +29,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/profile");
+      document.location.replace("/login");
     } else {
       alert(response.statusText);
     }
