@@ -1,35 +1,35 @@
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
-  const firstName = document.querySelector("#first-name").value.trim();
-  const lastName = document.querySelector("#last-name").value.trim();
-  const email = document.querySelector("#email").value.trim();
-  const password = document.querySelector("#password").value.trim();
-  const compStyle = document.querySelector("#comp").value.trim();
-  const laxStyle = document.querySelector("#lax").value.trim();
-  const handicap = document.querySelector("#handicap").value.trim();
-  const gender = document.querySelector("#gender").value.trim();
-  const userName = document.querySelector("#username").value.trim();
-
-  if (gender && userName && firstName && lastName && email && password && compStyle && laxStyle && handicap) {
-    const response = await fetch("/api/users", {
+  const first_name = document.querySelector("#grid-first-name").value.trim();
+  const last_name = document.querySelector("#grid-last-name").value.trim();
+  const email = document.querySelector("#grid-email").value.trim();
+  const password = document.querySelector("#grid-password").value.trim();
+  const compStyle = document.querySelector("#grid-comp").value.trim();
+  const laxStyle = document.querySelector("#grid-lax").value.trim();
+  const handicap = document.querySelector("#grid-handicap").value.trim();
+  const gender = document.querySelector("#grid-gender").value.trim();
+  const user_name = document.querySelector("#grid-username").value.trim();
+console.log(first_name);
+  if (user_name) {
+    const response = await fetch("/api/users/signup", {
       method: "POST",
       body: JSON.stringify({
-        gender,
-        userName,
-        firstName,
-        lastName,
+        // gender,
+        user_name,
+        first_name,
+        last_name,
         email,
         password,
-        compStyle,
-        laxStyle,
-        handicap,
+        // compStyle,
+        // laxStyle,
+        // handicap,
       }),
       headers: { "Content-Type": "application/json" },
     });
 
     if (response.ok) {
-      document.location.replace("/login");
+      document.location.replace("/profile");
     } else {
       alert(response.statusText);
     }
