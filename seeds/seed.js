@@ -1,8 +1,11 @@
 const sequelize = require("../config/connection");
+const bcrypt = require('bcrypt')
 const { User, Attribute } = require("../models");
 
 const userSeedData = require("./user-seeds.json");
 const attributeSeedData = require("./attributes-seeds.json");
+
+userSeedData.password = bcrypt.hash(userSeedData.password, 10);
 
 const seedDatabase = async () => {
   await sequelize.sync({

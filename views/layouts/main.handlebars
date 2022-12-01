@@ -85,10 +85,19 @@
             class="block text-sm px-2 py-4 text-white hover:bg-green-800 transition duration-300"
           >Roster</a>
         </li>
-        <li><a
+        <li>
+        {{#if logged_in}}
+          <a
+            href="/"
+            class="block text-sm px-2 py-4 text-white hover:bg-green-800 transition duration-300"
+          >Logout</a>
+        {{else}}
+          <a
             href="/login"
             class="block text-sm px-2 py-4 text-white hover:bg-green-800 transition duration-300"
-          >Login</a></li>
+          >Login</a>
+        {{/if}}
+        </li>
       </ul>
     </div>
     <script>
